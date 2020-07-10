@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  cloudFunctions: 'https://us-central1-lxg-development.cloudfunctions.net'
 };

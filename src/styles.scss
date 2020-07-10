@@ -1,1 +1,110 @@
-/* You can add global styles to this file, and also import other style files */
+@import "src/variables";
+
+/* Global HTML */
+html,
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5rem;
+  color: $dark;
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  transition: 0.2s;
+  max-width: 100%;
+}
+
+/* Global Classes */
+.container {
+  max-width: 1280px;
+  height: 100%;
+  padding: 0 32px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section {
+  width: 100%;
+  padding: 120px 0;
+  .section-heading {
+    font-size: 2rem;
+    line-height: 1.25;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 100px;
+  }
+
+  .section-subheading {
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    color: $grey;
+    margin-bottom: 64px;
+    margin-top: -88px;
+  }
+}
+
+.btn {
+  padding: 16px 32px;
+  background-color: $primary;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  outline: none;
+  border: 1px solid $primary;
+  cursor: pointer;
+  border-radius: 4px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+  &:hover {
+    background-color: $primary-dark;
+  }
+  &:disabled {
+    color: $dark;
+    background-color: $grey;
+    border-color: $grey;
+    cursor: not-allowed;
+  }
+}
+
+/* Tablets */
+@media (max-width: 959px) {
+  /* Global Classes Tablets */
+  .section {
+    padding: 60px 0;
+    .section-heading {
+      margin-bottom: 40px;
+    }
+
+    .section-subheading {
+      margin-top: -32px;
+    }
+  }
+  .container {
+    padding: 16px;
+  }
+}
+
+@media (max-width: 599px) {
+  /* Global Classes Tablets */
+  .section {
+    padding: 40px 0;
+    .section-heading {
+      margin-bottom: 32px;
+    }
+
+    .section-subheading {
+      margin-top: -24px;
+    }
+  }
+  .container {
+    padding: 16px;
+  }
+}

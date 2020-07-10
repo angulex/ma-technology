@@ -1,0 +1,10 @@
+<section class="section clients-section">
+    <div class="container" fxLayout="column" fxLayoutAlign="center center">
+        <h2 class="section-heading">Trusted By</h2>
+        <div class="clients-wrapper" fxLayout.xd="column" fxLayout.gt-xs="row" fxLayoutGap="32px">
+            <div *ngFor="let client of clients" class="image-wrapper" fxFlex fxLayoutAlign="center center">
+                <img class="client-logo" [src]="client.img" alt="Daimler Logo">
+            </div>
+        </div>
+    </div>
+</section>

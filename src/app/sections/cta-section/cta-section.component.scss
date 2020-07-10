@@ -1,0 +1,8 @@
+@import 'src/variables';
+
+.cta-section {
+    background-color: $primary;
+    .btn {
+        background-color: $dark;
+    }
+}
