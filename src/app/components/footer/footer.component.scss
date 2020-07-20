@@ -2,13 +2,9 @@
 
 .footer {
     width: 100%;
-    height: 128px;
+    height: 200px;
     background-color: $dark;
-    .logo {
-        height: 64px;
-    }
-    .nav-link {
+    .copywrite, .company {
         color: #fff;
-        cursor: pointer;
     }
 }

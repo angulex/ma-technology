@@ -1,1 +1,11 @@
-<p>features-section works!</p>
+<section class="section features-section">
+    <div class="container">
+        <h2 class="section-heading">
+            What I do
+        </h2>
+        <div class="features" fxLayout="row warp" fxLayoutAlign="center start">
+            <app-feature class="feature" *ngFor="let feature of features" [feature]="feature" fxFlex.gt-xs="25%" fxFlex.xs="100%"></app-feature>
+        </div>
+
+    </div>
+</section>

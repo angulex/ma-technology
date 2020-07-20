@@ -4,9 +4,9 @@
             Contact
         </h2>
         <h3 class="section-subheading">Want to talk about a project?</h3>
-        <div class="content" fxLayout.xs="column" fxLayout.gt-xs="row" fxLayoutGap="32px">
-            <div class="wrapper" fxFlex="50">
-
+        <div class="content" fxLayout.xs="column" fxLayout.gt-xs="row" fxLayoutGap="32px"
+            fxLayoutAlign.gt-xs="center start">
+            <div class="wrapper">
                 <form [formGroup]="formGroup" (submit)="onSubmit()" class="contact-form">
                     <div fxLayoutAlign.xs="column" fxLayoutAlign.gt-xs="row" fxLayoutGap="32px">
                         <div class="formgroup">
@@ -18,7 +18,7 @@
                             <input class="input" type="email" formControlName="email" id="email" />
                         </div>
                     </div>
-                  
+
                     <div class="formgroup">
                         <label class="label" for="subject">Subject</label>
                         <input class="input" type="text" formControlName="subject" id="subject" />
@@ -32,7 +32,7 @@
                     <button [disabled]="formGroup.invalid" class="btn" type="submit">Submit</button>
                 </form>
             </div>
-            <div class="wrapper" fxFlex="50">
+            <div class="wrapper">
                 <div class="info-section">
                     <h3 class="info-heading">My Office</h3>
                     <ul class="items">
@@ -51,7 +51,7 @@
                         </li>
                     </ul>
                 </div>
-              
+
 
                 <div class="info-section">
                     <h3 class="info-heading">Business Hours</h3>
@@ -70,12 +70,6 @@
                         </li>
                     </ul>
                 </div>
-
-                <div class="info-section">
-                    <h3 class="info-heading">Get in Touch</h3>
-                    <p>Talking to each other is completely free!</p>
-                </div>
-
             </div>
         </div>
 

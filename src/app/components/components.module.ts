@@ -2,23 +2,33 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { SharedModule } from '../shared/shared.module';
-import { HeaderComponent } from './header/header.component';
+
+import { CreditsComponent } from './credits/credits.component';
 import { FooterComponent } from './footer/footer.component';
-import { TestimonialComponent } from './testimonial/testimonial.component';
+import { NavigationComponent } from './navigation/navigation.component';
+
+import { LayerComponent } from './ui/layer/layer.component';
+import { SnackbarComponent } from './ui/snackbar/snackbar.component';
 
 @NgModule({
   declarations: [
-    HeaderComponent,
+    NavigationComponent,
     FooterComponent,
-    TestimonialComponent],
+    CreditsComponent,
+    LayerComponent,
+    SnackbarComponent
+  ],
   imports: [
     CommonModule,
     SharedModule
   ],
   exports: [
-    HeaderComponent,
+    NavigationComponent,
     FooterComponent,
-    TestimonialComponent
+    CreditsComponent,
+    LayerComponent,
+    SnackbarComponent
   ]
 })
+
 export class ComponentsModule { }

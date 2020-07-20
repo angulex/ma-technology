@@ -1,0 +1,14 @@
+@import 'src/variables';
+
+.snackbar {
+    position: fixed;
+    display: inline-block;
+    text-align: center;
+    border: 2px solid $dark;
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 12px;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+}

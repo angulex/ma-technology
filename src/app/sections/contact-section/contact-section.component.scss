@@ -2,10 +2,8 @@
 
 .contact-section {
   border-bottom: none;
-  .section-subheading {
-    color: #fff;
-  }
-
+  padding-left: 24px;
+  padding-right: 24px;
   .contact-form {
     display: block;
     margin: auto;
@@ -32,38 +30,34 @@
       .textarea {
         height: 160px;
       }
+      
+    }
+    .btn {
+      width: 100%;
     }
   }
 
   .info-section {
     margin-bottom: 32px;
-  }
 
-  .info-heading {
-    margin-bottom: 12px;
-  }
+    .info-heading {
+      margin-bottom: 12px;
+    }
 
-  .items {
-    margin-bottom: 32px;
-  }
+    .items {
+      margin-bottom: 32px;
 
-  .item {
-    margin-bottom: 8px;
-  }
+      .item {
+        margin-bottom: 8px;
 
-  .value {
-    font-weight: 400;
-  }
-
-}
-
-@media (max-width: 959px) {
-  .contact-section {
-    .contact-form {
-      width: calc(100% / 3 * 2);
+        .value {
+          font-weight: 400;
+        }
+      }
     }
   }
 }
+
 @media (max-width: 599px) {
   .contact-section {
     .contact-form {

@@ -1,5 +1,9 @@
 <section class="section testimonials-section">
-    <div class="container" fxLayoutAlign.xs="cloumn" fxLayoutAlign.gt-xs="row">
-        <app-testimonial *ngFor="let testimonial of testimonials" [testimonial]="testimonial"></app-testimonial>
+    <div class="container">
+        <h2 class="section-heading">What Clients say</h2>
+        <div class="testimonials">
+            <app-testimonial *ngFor="let testimonial of testimonials" [testimonial]="testimonial"></app-testimonial>
+        </div>
+      
     </div>
 </section>

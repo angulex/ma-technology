@@ -3,7 +3,18 @@
     .logo {
         height: 64px;
     }
-    .nav-link {
-        cursor: pointer;
+
+    .nav-items {
+        position: fixed;
+        right: 0;
+        z-index: 100;
+        background-color: #000000;
+        opacity: 70%;
+        padding: 16px;
+        border-bottom-left-radius: 12px;
+        .nav-link {
+            cursor: pointer;
+        }
     }
+    
 }
