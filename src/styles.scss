@@ -5,7 +5,7 @@ html,
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 1.5rem;
   color: $dark;
   scroll-behavior: smooth;
@@ -45,7 +45,7 @@ a {
   .section-heading {
     font-size: 2rem;
     line-height: 1.25;
-    font-weight: bold;
+    font-weight: 700;
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 100px;
@@ -53,7 +53,6 @@ a {
 
   .section-subheading {
     font-size: 1rem;
-    font-weight: 400;
     text-align: center;
     color: $grey;
     margin-bottom: 64px;
@@ -87,7 +86,7 @@ a {
 @media (max-width: 959px) {
   /* Global Classes Tablets */
   .section {
-    padding: 60px 0;
+    padding: 56px 0;
     .section-heading {
       margin-bottom: 48px;
     }
@@ -95,9 +94,6 @@ a {
     .section-subheading {
       margin-top: -32px;
     }
-  }
-  .container {
-    padding: 8px;
   }
 }
 
@@ -112,7 +108,5 @@ a {
       margin-top: -24px;
     }
   }
-  .container {
-    padding: 8px;
-  }
+
 }

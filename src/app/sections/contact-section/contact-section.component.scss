@@ -2,8 +2,6 @@
 
 .contact-section {
   border-bottom: none;
-  padding-left: 24px;
-  padding-right: 24px;
   .contact-form {
     display: block;
     margin: auto;
@@ -30,7 +28,7 @@
       .textarea {
         height: 160px;
       }
-      
+
     }
     .btn {
       width: 100%;
@@ -50,9 +48,6 @@
       .item {
         margin-bottom: 8px;
 
-        .value {
-          font-weight: 400;
-        }
       }
     }
   }
