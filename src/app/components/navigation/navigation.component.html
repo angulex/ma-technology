@@ -1,16 +1,46 @@
 <nav class="nav">
-  <div class="container desktop" fxLayout="row" fxLayoutAlign="space-between center">
-    <img class="logo" alt="Logo" src="/assets/logo.png">
-    <div class="menu-icon" fxHide.gt-sm (click)="onMenu()" fxLayout="column" fxLayoutGap="4px"
-      fxLayoutAlign="center center">
+  <div
+    class="container desktop"
+    fxLayout="row"
+    fxLayoutAlign="space-between center"
+  >
+    <div
+      class="menu-icon"
+      fxHide.gt-sm
+      (click)="onMenu()"
+      fxLayout="column"
+      fxLayoutGap="4px"
+      fxLayoutAlign="center center"
+    >
       <div *ngFor="let bar of [0, 1, 2]" class="bar"></div>
     </div>
-    <div fxLayout.gt-sm="column" fxLayout.lt-md="row" fxLayoutAlign.lt-md="center start" fxLayoutGap.lt-md="40px"
-      class="nav-items" *ngIf="isOpen || !isMobile">
-      <ul fxLayout.gt-sm="row" fxLayout.lt-md="column" fxLayoutGap="32px" class="anchor-items" [@childrenFadeInLeft]="isOpen">
-        <li *ngFor="let section of sections" class="anchor-item" fxLayoutAlign="center center">
-          <a class="nav-link anchor-link" (click)="scrollToAnchor(section.anchor)" (click)="onMenu()"
-            [routerLink]="">{{ section.name }}</a>
+    <div
+      fxLayout.gt-sm="column"
+      fxLayout.lt-md="row"
+      fxLayoutAlign.lt-md="center start"
+      fxLayoutGap.lt-md="40px"
+      class="nav-items"
+      *ngIf="isOpen || !isMobile"
+    >
+      <ul
+        fxLayout.gt-sm="row"
+        fxLayout.lt-md="column"
+        fxLayoutGap="32px"
+        class="anchor-items"
+        [@childrenFadeInLeft]="isOpen"
+      >
+        <li
+          *ngFor="let section of sections"
+          class="anchor-item"
+          fxLayoutAlign="center center"
+        >
+          <a
+            class="nav-link anchor-link"
+            (click)="scrollToAnchor(section.anchor)"
+            (click)="onMenu()"
+            [routerLink]=""
+            >{{ section.name }}</a
+          >
         </li>
       </ul>
     </div>

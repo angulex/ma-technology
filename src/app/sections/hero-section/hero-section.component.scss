@@ -1,11 +1,51 @@
+@import "src/variables";
+
 .hero-section {
-  height: 0;
-  padding: 0; /* remove any pre-existing padding, just in case */
-  padding-bottom: 75%; /* for a 4:3 aspect ratio */
-  background-image: url("/assets/img/hero/kuka.jpg");
+  position: relative;
+  padding: 60px 0 0 0;
+  background-image: url("/assets/img/hero/bg-hero.jpg");
   background-position: center center;
   background-size: 100%;
+  z-index: -2;
   background-repeat: no-repeat;
+  .container {
+    .left-wrapper {
+      position: relative;
+      .robot-img {
+        max-height: 655px;
+      }
+      .site-heading {
+        position: absolute;
+        display: inline-block;
+        right: 0;
+        top: 50%;
+        text-align: center;
+        font-size: 72px;
+        font-weight: bold;
+        max-width: 320px;
+        line-height: 62px;
+        margin: 0;
+        .text-white {
+          color: #fff;
+        }
+      }
+    }
+    .right-wrapper {
+      .person-img {
+        height: 500px;
+        width: auto;
+      }
+    }
+  }
+
+  .bg-primary {
+    position: absolute;
+    bottom: 0;
+    height: 180px;
+    width: 100%;
+    z-index: -1;
+    background-color: $primary;
+  }
 }
 
 @media (max-width: 959px) {

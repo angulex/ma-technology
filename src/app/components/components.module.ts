@@ -9,6 +9,7 @@ import { NavigationComponent } from './navigation/navigation.component';
 
 import { LayerComponent } from './ui/layer/layer.component';
 import { SnackbarComponent } from './ui/snackbar/snackbar.component';
+import { LogoComponent } from './logo/logo.component';
 
 @NgModule({
   declarations: [
@@ -16,19 +17,17 @@ import { SnackbarComponent } from './ui/snackbar/snackbar.component';
     FooterComponent,
     CreditsComponent,
     LayerComponent,
-    SnackbarComponent
+    SnackbarComponent,
+    LogoComponent,
   ],
-  imports: [
-    CommonModule,
-    SharedModule
-  ],
+  imports: [CommonModule, SharedModule],
   exports: [
     NavigationComponent,
     FooterComponent,
     CreditsComponent,
     LayerComponent,
-    SnackbarComponent
-  ]
+    SnackbarComponent,
+    LogoComponent,
+  ],
 })
-
-export class ComponentsModule { }
+export class ComponentsModule {}
