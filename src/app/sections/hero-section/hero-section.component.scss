@@ -2,37 +2,23 @@
 
 .hero-section {
   position: relative;
-  padding: 60px 0 0 0;
+  padding: 160px 0 0 0;
   background-image: url("/assets/img/hero/bg-hero.jpg");
-  background-position: center center;
-  background-size: 100%;
-  z-index: -2;
+  background-position: center center/cover;
   background-repeat: no-repeat;
+  z-index: -100;
+  min-height: 50vh;
   .container {
+    min-height: 50vh;
     .left-wrapper {
-      position: relative;
       .robot-img {
-        max-height: 655px;
-      }
-      .site-heading {
-        position: absolute;
-        display: inline-block;
-        right: 0;
-        top: 50%;
-        text-align: center;
-        font-size: 72px;
-        font-weight: bold;
-        max-width: 320px;
-        line-height: 62px;
-        margin: 0;
-        .text-white {
-          color: #fff;
-        }
+        max-height: 500px;
       }
     }
     .right-wrapper {
+      min-height: 50vh;
       .person-img {
-        height: 500px;
+        max-height: 500px;
         width: auto;
       }
     }
@@ -42,14 +28,55 @@
     position: absolute;
     bottom: 0;
     height: 180px;
+    max-height: 180px;
     width: 100%;
-    z-index: -1;
+    z-index: -10;
     background-color: $primary;
+
+    .site-heading {
+      position: absolute;
+      display: inline-block;
+      right: 50%;
+      top: -50%;
+      text-align: center;
+      font-size: 3em;
+      font-weight: bold;
+      max-width: 250px;
+      line-height: 48px;
+      margin: 0;
+      .text-white {
+        color: #fff;
+      }
+    }
   }
 }
 
 @media (max-width: 959px) {
-  .spacer {
-    height: 48px;
+  .hero-section {
+    padding-top: 80px;
+    .container {
+      .left-wrapper {
+        .robot-img {
+        }
+      }
+      .right-wrapper {
+        width: 100%;
+        .person-img {
+        }
+      }
+    }
+
+    .bg-primary {
+      max-height: 150px;
+      .site-heading {
+        top: -240%;
+        font-size: 32px;
+        max-width: 400px;
+        left: 10%;
+        line-height: 32px;
+        .text-white {
+        }
+      }
+    }
   }
 }

@@ -1,5 +1,3 @@
-<div class="spacer"></div>
-
 <app-logo></app-logo>
 <section class="section hero-section">
   <div class="container" fxLayout="row" fxLayout.gt-sm="row">
@@ -8,19 +6,22 @@
       fxFlex="50%"
       fxLayout="row"
       fxLayoutAlign="start end"
+      fxHide.lt-md
     >
       <img
         class="robot-img"
         src="/assets/img/hero/robot-hero.png"
         alt="Robot"
       />
-      <h1 class="site-heading">
-        Let me handle <span class="text-white">this!</span>
-      </h1>
+
     </div>
-    <div class="right-wrapper" fxFlex="50%" fxLayoutAlign="end end">
+    <div class="right-wrapper" fxFlex.gt-sm="50%" fxLayoutAlign="center end">
       <img class="person-img" src="/assets/img/hero/anto-hero.png" alt="Anto" />
     </div>
   </div>
-  <div class="bg-primary"></div>
+  <div class="bg-primary">
+    <h1 class="site-heading">
+      Let me handle <span class="text-white">this!</span>
+    </h1>
+  </div>
 </section>
