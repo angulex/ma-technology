@@ -1,15 +1,14 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, Validators, FormBuilder } from '@angular/forms';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 
 import { SharedService } from 'src/app/shared/shared.service';
 
 @Component({
   selector: 'app-contact-section',
   templateUrl: './contact-section.component.html',
-  styleUrls: ['./contact-section.component.scss']
+  styleUrls: ['./contact-section.component.scss'],
 })
 export class ContactSectionComponent implements OnInit {
-
   formGroup: FormGroup = this.fb.group({
     name: [null, [Validators.required]],
     email: [null, [Validators.required, Validators.email]],
@@ -17,9 +16,9 @@ export class ContactSectionComponent implements OnInit {
     message: [null, [Validators.required]],
   });
 
-  constructor(private fb: FormBuilder, private sharedService: SharedService) { }
+  constructor(private fb: FormBuilder, private sharedService: SharedService) {}
 
-  ngOnInit(): void { }
+  ngOnInit(): void {}
 
   onSubmit() {
     this.sharedService
@@ -27,7 +26,7 @@ export class ContactSectionComponent implements OnInit {
       .subscribe((response: any) => {
         this.sharedService.openSnackbar(response.message);
         if (!response.error) {
-          this.formGroup.reset()
+          this.formGroup.reset();
         }
       });
   }

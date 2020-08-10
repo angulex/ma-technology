@@ -21,7 +21,6 @@ export class NavigationComponent implements OnInit, OnDestroy {
 
   ngOnInit(): void {
     this.startBreakPointSub();
-    console.log(this.sections);
   }
 
   startBreakPointSub() {

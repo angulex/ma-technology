@@ -1,74 +1,11 @@
 @import "src/variables";
 
 .hero-section {
-  position: relative;
-  padding: 160px 0 0 0;
   background-image: url("/assets/img/hero/bg-hero.jpg");
-  background-position: center center/cover;
-  background-repeat: no-repeat;
-  z-index: -100;
-  min-height: 50vh;
-  .container {
-    min-height: 50vh;
-    .left-wrapper {
-      .robot-img {
-        max-height: 500px;
-      }
-    }
-    .right-wrapper {
-      min-height: 50vh;
-      .person-img {
-        max-height: 500px;
-        width: auto;
-      }
-    }
-  }
-
-  .bg-primary {
-    position: absolute;
-    bottom: 0;
-    height: 180px;
-    max-height: 180px;
-    width: 100%;
-    z-index: -10;
-    background-color: $primary;
-
-    .site-heading {
-      position: absolute;
-      display: inline-block;
-      right: 50%;
-      top: -27%;
-      text-align: center;
-      font-size: 3em;
-      font-weight: bold;
-      max-width: 250px;
-      line-height: 48px;
-      margin: 0;
-      .text-white {
-        color: #fff;
-      }
-    }
+  .person-img {
+    max-height: 500px;
+    max-height: 80vh;
   }
 }
 
-@media (max-width: 959px) {
-  .hero-section {
-    padding-top: 80px;
-    .container {
-      .right-wrapper {
-        width: 100%;
-      }
-    }
-
-    .bg-primary {
-      max-height: 150px;
-      .site-heading {
-        top: -172%;
-        font-size: 32px;
-        max-width: 400px;
-        left: 0%;
-        line-height: 32px;
-      }
-    }
-  }
-}
+@media (max-width: 959px) {}

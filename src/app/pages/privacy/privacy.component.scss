@@ -1,0 +1,38 @@
+@import "src/variables";
+
+.container {
+  word-break: break-word;
+  .language {
+    .label {
+      margin-right: 16px;
+    }
+    .select {
+      outline: none;
+    }
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding-top: 24px;
+}
+
+a {
+  color: $primary;
+
+  &:hover {
+    color: $primary;
+  }
+
+  &:active {
+    color: $primary-dark;
+  }
+}
+
+.h1 {
+  font-size: 24px;
+}

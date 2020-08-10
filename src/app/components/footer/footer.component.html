@@ -1,10 +1,20 @@
 <footer class="footer">
-    <div class="container" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="12px">
-        <p class="copywrite">
-            &copy; Copywrite 2020
-        </p>
-        <p class="company">
-            MA-Technology
-        </p>
+  <div class="container" fxLayout="column" fxLayoutAlign="center center">
+    <p class="copywrite">
+      MA-Technology &copy; Copywrite 2020
+    </p>
+    <div
+      class="links"
+      fxLayout.gt-sm="row"
+      fxLayout.lt-md="column"
+      fxLayoutAlign="center center"
+      fxLayoutGap.gt-sm="48px"
+      fxLayoutGap.lt-md="8px"
+    >
+      <a class="link" routerLink="/legal">Legal Notice / Impressum</a>
+      <a class="link" routerLink="/privacy"
+        >Privacy Policy / Datenschutz</a
+      >
     </div>
+  </div>
 </footer>

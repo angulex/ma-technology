@@ -2,18 +2,9 @@
   <div
     class="container desktop"
     fxLayout="row"
-    fxLayoutAlign="space-between center"
+    fxLayoutAlign.gt-sm="space-between center"
+    fxLayoutAlign.lt-md="end center"
   >
-    <div
-      class="menu-icon"
-      fxHide.gt-sm
-      (click)="onMenu()"
-      fxLayout="column"
-      fxLayoutGap="4px"
-      fxLayoutAlign="center center"
-    >
-      <div *ngFor="let bar of [0, 1, 2]" class="bar"></div>
-    </div>
     <div
       fxLayout.gt-sm="column"
       fxLayout.lt-md="row"
@@ -43,6 +34,16 @@
           >
         </li>
       </ul>
+    </div>
+    <div
+      class="menu-icon"
+      fxHide.gt-sm
+      (click)="onMenu()"
+      fxLayout="column"
+      fxLayoutGap="4px"
+      fxLayoutAlign="center center"
+    >
+      <div *ngFor="let bar of [0, 1, 2]" class="bar"></div>
     </div>
   </div>
 </nav>

@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { SharedService } from 'src/app/shared/shared.service';
@@ -19,6 +19,7 @@ import { HttpClientModule } from '@angular/common/http';
   exports: [
     CommonModule,
     HttpClientModule,
+    FormsModule,
     ReactiveFormsModule,
     FlexLayoutModule,
     AppRoutingModule,
