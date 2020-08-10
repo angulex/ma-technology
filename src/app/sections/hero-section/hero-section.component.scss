@@ -37,7 +37,7 @@
       position: absolute;
       display: inline-block;
       right: 50%;
-      top: -50%;
+      top: -27%;
       text-align: center;
       font-size: 3em;
       font-weight: bold;
@@ -55,27 +55,19 @@
   .hero-section {
     padding-top: 80px;
     .container {
-      .left-wrapper {
-        .robot-img {
-        }
-      }
       .right-wrapper {
         width: 100%;
-        .person-img {
-        }
       }
     }
 
     .bg-primary {
       max-height: 150px;
       .site-heading {
-        top: -240%;
+        top: -172%;
         font-size: 32px;
         max-width: 400px;
-        left: 10%;
+        left: 0%;
         line-height: 32px;
-        .text-white {
-        }
       }
     }
   }
